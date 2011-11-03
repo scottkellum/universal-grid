@@ -12,6 +12,7 @@ header
     line-height: $line-height
     color: $background-color
     padding: .25em 2%
+    +gradient(lighten($header-color, 10%), darken($header-color, 10%))
   nav
     +gradient($nav-color, darken($nav-color, 15%))
     +clearfix

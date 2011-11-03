@@ -210,7 +210,16 @@ section {
       font-size: 2em;
       line-height: 1.3em;
       color: white;
-      padding: 0.25em 2%; }
+      padding: 0.25em 2%;
+      background-color: #e54f19;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6933', endColorstr='#cc3600');
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6933', endColorstr='#cc3600');
+      background-image: -webkit-gradient(linear, top left, bottom left, from(#ff6933), to(#cc3600));
+      background-image: -webkit-linear-gradient(top, #ff6933, #cc3600);
+      background-image: -moz-linear-gradient(top, #ff6933, #cc3600);
+      background-image: -ms-linear-gradient(top, #ff6933, #cc3600);
+      background-image: -o-linear-gradient(top, #ff6933, #cc3600);
+      background-image: linear-gradient(top, #ff6933, #cc3600); }
     header nav {
       background-color: #009ed8;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00bbff', endColorstr='#0083b3');
