@@ -210,7 +210,6 @@ section {
       font-size: 2em;
       line-height: 1.3em;
       color: white;
-      padding: 0.25em 2%;
       background-color: #e54f19;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6933', endColorstr='#cc3600');
       -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6933', endColorstr='#cc3600');
@@ -260,8 +259,7 @@ section {
   article {
     background-color: none;
     float: left;
-    width: 68.5%;
-    padding: 0 2%; }
+    width: 72.5%; }
 
   aside {
     background-color: white;
