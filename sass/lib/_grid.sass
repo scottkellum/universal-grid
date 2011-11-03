@@ -1,0 +1,51 @@
+// MEASUREMENTS
+$base-size: 16px !default
+$line-height: 1.3em !default
+$margin: 5% !default
+$gutter-width: 10% !default
+$gutter-height: $line-height
+$module-width: respond !default
+$module-height: $line-height * 3 !default
+$text-padding: 2% !default
+$columns: 12 !default
+$wrapper-align: center !default
+
+
+body
+  font-size: $base-size
+  line-height: $line-height
+
+@function module($module: $module-width, $gutter: $gutter-width, $units: $columns)
+  @return ($module-width * $units) + ($gutter-width * ($units - 1))
+
+@function grid($units: 1, $axis: x)
+  @if $axis == "x"
+    @if $module-width == "respond"
+      $module-width: (100% - ($gutter-width * ($columns - 1))) / $columns
+      @return module($units: $units)
+    @if $module-width != "respond"
+      @return  module($units: $units)
+  @if $axis == "y"
+    @return  module($module-height, $gutter-height, $units)
+
+@if $module-width == "respond"
+  .wrapper
+    position: relative
+    @if $wrapper-align == "left"
+      margin-left: 0
+      margin-right: $margin
+    @if $wrapper-align == "center"
+      margin-left: $margin
+      margin-right: $margin
+    @if $wrapper-align == "right"
+      margin-left: $margin
+      margin-right: 0
+@if $module-width != "respond"
+  .wrapper
+    @if $wrapper-align == "center"
+      margin-left: auto
+      margin-right: auto
+    @if $wrapper-align == "right"
+      margin-left: auto
+      margin-right: 0
+    width: grid($columns)

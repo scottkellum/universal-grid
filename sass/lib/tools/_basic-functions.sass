@@ -1,0 +1,80 @@
+// TYPOGRAPHIC TOOLS
+=type($size, $line-height)
+  font-size: $size
+  line-height: $line-height
+
+=solid($lineheight)
+  font-size: $lineheight
+  line-height: 1em
+
+=caps($letterspace: 0.1em)
+  text-transform: uppercase
+  letter-spacing: $letterspace
+
+=letterpress($color)
+  text-shadow: 0 -1px 0 darken($color, 15%), 0 1px 0 lighten($color, 15%)
+
+
+// CENTER AND FILL BACKGROUND
+=background-fill
+  background-repeat: no-repeat
+  background-position: center center fixed
+  +prefix(background-size, cover)
+
+
+// @FONT-FACE (FONTSPRING SYNTAX)
+=font($name, $url, $weight: normal, $style: normal)
+  @font-face
+    font-family: '$name'
+    font-weight: $weight
+    font-style: $style
+    src: url('#{$url}.eot?') format('eot'), url('#{$url}.woff') format('woff'), url('#{$url}.ttf')  format('truetype')
+
+
+// CLEARFIX
+=clearfix
+  &:before, &:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden  
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden  
+    clear: both  
+  &
+    zoom: 1  
+
+// REMOVE GRID
+=remove
+  min-width: 99999px
+  width: 99999px
+
+
+// SOME BASIC SPRITE STYLING
+=sprite($width, $height, $offset-x, $offset-y, $url: $sprite-file)
+  display: block
+  overflow: hidden
+  text-indent: -999px
+  background-image: url('../img/sprites.png')
+  background-position: ($offset-x * -1) ($offset-y * -1)
+  background-repeat: no-repeat
+  width: $width
+  height: $height
+
+
+// DEBUG TOOLS
+=r
+  background: #ff9999 !important
+=g
+  background: #99ff99 !important
+=b
+  background: #9999ff !important
+=c
+  background: #99ffff !important
+=m
+  background: #ff99ff !important
+=y
+  background: #ffff99 !important
