@@ -3,35 +3,12 @@ html, body
   background-color: $background-color
   color: $text-color
 
-header
-  +gradient(lighten($header-color, 10%), darken($header-color, 5%))
-  h1
-    +letterpress($header-color)
-    font-family: $hed
-    font-size: 2em
-    line-height: $line-height
-    color: $background-color
-    +gradient(lighten($header-color, 10%), darken($header-color, 10%))
-  nav
-    +gradient($nav-color, darken($nav-color, 15%))
-    +clearfix
-
-nav
-  ol
-    +gradient(lighten($nav-color, 10%), darken($nav-color, 5%))
-    li, a
-      display: inline
 
 article
-  background-color: $article-color
   float: left
   width: grid(9)
 
 aside
   background-color: $aside-color
   float: right
-  width: grid(4)
-
-footer
-  background-color: $footer-color
-  clear: both
+  width: grid(3)

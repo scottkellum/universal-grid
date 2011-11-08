@@ -1,8 +1,14 @@
+// COLORS
+// calculated by a built in color schemer, write your own color schemes as you wish.
+$base-color: #237ADE // base or primary color
+$color-scheme: triad // complement, triad, tetrad, analogic or accented-analogic
+$color-angle: 30 // color offset ammount.
 
-// COLOR
-$primary: #f40 !default
-$secondary: invert($primary) !default
-$tertiary: $primary / 2 + $secondary / 2 !default
+// Output of color scemer, set to your own values if you want.
+$primary: color-schemer(primary)
+$secondary: color-schemer(secondary)
+$tertiary: color-schemer(tertiary)
+$quadrary: color-schemer(quadrary)
 
 $affirm: #4CDB18 !default
 $notify: #FFD900 !default
@@ -12,7 +18,7 @@ $error: #ED3300 !default
 $background-color: #fff !default
 $body-color: $background-color !default
 $article-color: none !default
-$aside-color: lighten($tertiary, 50%) !default
+$aside-color: none !default
 $header-color: $primary !default
 $nav-color: $secondary !default
 $footer-color: $primary !default
@@ -22,7 +28,7 @@ $link-color: $primary
 // FONTS
 $text: serif
 $hed: sans-serif
-$subhed: sans-serif
+$subhed: $hed
 
 @import default/aside
 @import default/breadcrumbs
