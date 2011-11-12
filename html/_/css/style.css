@@ -173,38 +173,43 @@ body {
   margin-left: 5%;
   margin-right: 5%; }
 
+article {
+  background-color: white;
+  float: left;
+  width: 74.5%; }
+
 footer {
   background-color: #df9516;
   clear: both; }
 
+.header.container {
+  background-color: #df9516; }
+
 header {
-  background-color: #da9728;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#c88514');
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#c88514');
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#ecab3c), to(#c88514));
-  background-image: -webkit-linear-gradient(top, #ecab3c, #c88514);
-  background-image: -moz-linear-gradient(top, #ecab3c, #c88514);
-  background-image: -ms-linear-gradient(top, #ecab3c, #c88514);
-  background-image: -o-linear-gradient(top, #ecab3c, #c88514);
-  background-image: linear-gradient(top, #ecab3c, #c88514); }
+  background-color: #e59f29;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#df9516');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#df9516');
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#ecab3c), to(#df9516));
+  background-image: -webkit-linear-gradient(top, #ecab3c, #df9516);
+  background-image: -moz-linear-gradient(top, #ecab3c, #df9516);
+  background-image: -ms-linear-gradient(top, #ecab3c, #df9516);
+  background-image: -o-linear-gradient(top, #ecab3c, #df9516);
+  background-image: linear-gradient(top, #ecab3c, #df9516); }
+  header h1, header h2 {
+    padding: 16px;
+    text-shadow: 0 -1px 0 #99660f, 0 1px 0 #eeb553; }
   header h1 {
-    text-shadow: 0 -1px 0 #99660f, 0 1px 0 #eeb553;
     font-family: sans-serif;
-    font-size: 2em;
-    line-height: 1.3em;
-    color: white;
-    background-color: #ce9026;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#b17611');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#b17611');
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#ecab3c), to(#b17611));
-    background-image: -webkit-linear-gradient(top, #ecab3c, #b17611);
-    background-image: -moz-linear-gradient(top, #ecab3c, #b17611);
-    background-image: -ms-linear-gradient(top, #ecab3c, #b17611);
-    background-image: -o-linear-gradient(top, #ecab3c, #b17611);
-    background-image: linear-gradient(top, #ecab3c, #b17611); }
+    font-size: 3em;
+    color: white; }
+  header h2 {
+    padding-top: 0;
+    margin-top: -16px;
+    font-size: 1.5em;
+    color: #f7e4c4; }
 
 nav {
-  background-color: #5356a2;
+  background-color: #5370a2;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
   -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
@@ -222,19 +227,19 @@ nav {
     height: 30px;
     padding: 0 10px;
     font-family: sans-serif;
-    font-weight: bold;
     color: white;
-    background-color: #424480;
+    background-color: #425980;
+    font-size: 0.8em;
     line-height: 30px;
-    border-top: 0px solid #16a3df;
-    text-shadow: 0 -1px 0 #393b6f, 0 1px 0 #8385bf;
+    border-top: 0px solid #ecab3c;
+    text-shadow: 0 -1px 0 #394d6f, 0 1px 0 #8399bf;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
     nav a:hover {
-      border-top: 3px solid #16a3df;
+      border-top: 3px solid #ecab3c;
       height: 27px; }
 
 p {
@@ -248,27 +253,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   line-height: 1.3em; }
 
-h2, h3, h4 {
-  border-top: 1px solid #666666;
+article h2, article h3, article h4 {
+  border-top: 1px solid #ecab3c;
   margin-top: 1em; }
-
-h1 {
+article h1 {
   font-size: 3em;
   margin-top: 0; }
-
-h2 {
+article h2 {
   font-size: 2em;
   border-top-width: 3px; }
-
-h3 {
+article h3 {
   font-size: 1.6em; }
-
-h4 {
+article h4 {
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
-
-h5 {
+article h5 {
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
@@ -277,8 +277,8 @@ ul, ol {
   padding-left: 1.3em; }
 
 section {
-  border-top: 1px solid #b3b3b3;
-  border-bottom: 1px solid #b3b3b3;
+  border-top: 1px solid #ecab3c;
+  border-bottom: 1px solid #ecab3c;
   margin: 0.65em 0;
   padding: 0.65em 0; }
 

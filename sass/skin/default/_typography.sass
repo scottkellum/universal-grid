@@ -9,28 +9,24 @@ h1, h2, h3, h4, h5, h6
   font-family: $subhed
   line-height: $line-height
 
-h2, h3, h4
-  border-top: 1px solid #666
-  margin-top: 1em
-
-h1
-  font-size: 3em
-  margin-top: 0
-
-h2
-  font-size: 2em
-  border-top-width: 3px
-
-h3
-  font-size: 1.6em
-
-h4
-  font-size: 1.2em
-  +caps
-
-h5
-  font-size: 1.2em
-  +caps
+article
+  h2, h3, h4
+    border-top: 1px solid $tertiary
+    margin-top: 1em
+  h1
+    font-size: 3em
+    margin-top: 0
+  h2
+    font-size: 2em
+    border-top-width: 3px
+  h3
+    font-size: 1.6em
+  h4
+    font-size: 1.2em
+    +caps
+  h5
+    font-size: 1.2em
+    +caps
 
 ul, ol
   padding-left: $line-height
@@ -46,7 +42,7 @@ quote
 blockquote
 
 section
-  border-top: 1px solid lighten($text-color, 50%)
-  border-bottom: 1px solid lighten($text-color, 50%)
+  border-top: 1px solid $tertiary
+  border-bottom: 1px solid $tertiary
   margin: $line-height/2 0
   padding: $line-height/2 0
