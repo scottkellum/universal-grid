@@ -1,0 +1,12 @@
+// detect if the site is responsive or not
+@if unit($module-width) == "%"
+  // everything should be indented to sit under this if statement.
+  @media all and (max-width: 640px)
+    body
+      margin-top: $nav-height * 2
+    article
+      width: grid(12)
+    aside
+      display: none
+    nav
+      height: $nav-height * 2

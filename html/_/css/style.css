@@ -174,70 +174,68 @@ body {
   margin-right: 5%; }
 
 footer {
-  background-color: red;
+  background-color: #df9516;
   clear: both; }
 
 header {
-  background-color: #f21919;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#e60000');
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#e60000');
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#ff3333), to(#e60000));
-  background-image: -webkit-linear-gradient(top, #ff3333, #e60000);
-  background-image: -moz-linear-gradient(top, #ff3333, #e60000);
-  background-image: -ms-linear-gradient(top, #ff3333, #e60000);
-  background-image: -o-linear-gradient(top, #ff3333, #e60000);
-  background-image: linear-gradient(top, #ff3333, #e60000); }
+  background-color: #da9728;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#c88514');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#c88514');
+  background-image: -webkit-gradient(linear, top left, bottom left, from(#ecab3c), to(#c88514));
+  background-image: -webkit-linear-gradient(top, #ecab3c, #c88514);
+  background-image: -moz-linear-gradient(top, #ecab3c, #c88514);
+  background-image: -ms-linear-gradient(top, #ecab3c, #c88514);
+  background-image: -o-linear-gradient(top, #ecab3c, #c88514);
+  background-image: linear-gradient(top, #ecab3c, #c88514); }
   header h1 {
-    text-shadow: 0 -1px 0 #b30000, 0 1px 0 #ff4d4d;
+    text-shadow: 0 -1px 0 #99660f, 0 1px 0 #eeb553;
     font-family: sans-serif;
     font-size: 2em;
     line-height: 1.3em;
     color: white;
-    background-color: #e51919;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#cc0000');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#cc0000');
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#ff3333), to(#cc0000));
-    background-image: -webkit-linear-gradient(top, #ff3333, #cc0000);
-    background-image: -moz-linear-gradient(top, #ff3333, #cc0000);
-    background-image: -ms-linear-gradient(top, #ff3333, #cc0000);
-    background-image: -o-linear-gradient(top, #ff3333, #cc0000);
-    background-image: linear-gradient(top, #ff3333, #cc0000); }
+    background-color: #ce9026;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#b17611');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecab3c', endColorstr='#b17611');
+    background-image: -webkit-gradient(linear, top left, bottom left, from(#ecab3c), to(#b17611));
+    background-image: -webkit-linear-gradient(top, #ecab3c, #b17611);
+    background-image: -moz-linear-gradient(top, #ecab3c, #b17611);
+    background-image: -ms-linear-gradient(top, #ecab3c, #b17611);
+    background-image: -o-linear-gradient(top, #ecab3c, #b17611);
+    background-image: linear-gradient(top, #ecab3c, #b17611); }
 
 nav {
-  background-color: #f21919;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#e60000');
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3333', endColorstr='#e60000');
-  background-image: -webkit-gradient(linear, top left, bottom left, from(#ff3333), to(#e60000));
-  background-image: -webkit-linear-gradient(top, #ff3333, #e60000);
-  background-image: -moz-linear-gradient(top, #ff3333, #e60000);
-  background-image: -ms-linear-gradient(top, #ff3333, #e60000);
-  background-image: -o-linear-gradient(top, #ff3333, #e60000);
-  background-image: linear-gradient(top, #ff3333, #e60000); }
-  nav:before, nav:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  nav:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    clear: both; }
-  nav {
-    zoom: 1; }
+  background-color: #5356a2;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7); }
   nav ol {
-    background-color: #fe4040;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6666', endColorstr='#ff1a1a');
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6666', endColorstr='#ff1a1a');
-    background-image: -webkit-gradient(linear, top left, bottom left, from(#ff6666), to(#ff1a1a));
-    background-image: -webkit-linear-gradient(top, #ff6666, #ff1a1a);
-    background-image: -moz-linear-gradient(top, #ff6666, #ff1a1a);
-    background-image: -ms-linear-gradient(top, #ff6666, #ff1a1a);
-    background-image: -o-linear-gradient(top, #ff6666, #ff1a1a);
-    background-image: linear-gradient(top, #ff6666, #ff1a1a); }
-    nav ol li, nav ol a {
-      display: inline; }
+    padding: 0;
+    height: 30px;
+    list-style: none; }
+  nav li {
+    float: left;
+    margin-right: 1px; }
+  nav a {
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #424480;
+    line-height: 30px;
+    border-top: 0px solid #16a3df;
+    text-shadow: 0 -1px 0 #393b6f, 0 1px 0 #8385bf;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    nav a:hover {
+      border-top: 3px solid #16a3df;
+      height: 27px; }
 
 p {
   text-indent: 1em;
@@ -275,22 +273,45 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+ul, ol {
+  padding-left: 1.3em; }
+
 section {
   border-top: 1px solid #b3b3b3;
   border-bottom: 1px solid #b3b3b3;
   margin: 0.65em 0;
   padding: 0.65em 0; }
 
-@media screen {
+@media all {
   html, body {
     background-color: white;
     color: #333333; }
+
+  body {
+    margin-top: 30px; }
 
   article {
     float: left;
     width: 74.5%; }
 
   aside {
-    background-color: #ff6666;
     float: right;
-    width: 23.5%; } }
+    width: 23.5%; }
+
+  nav {
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%; } }
+@media all and (max-width: 640px) {
+  body {
+    margin-top: 60px; }
+
+  article {
+    width: 100%; }
+
+  aside {
+    display: none; }
+
+  nav {
+    height: 60px; } }

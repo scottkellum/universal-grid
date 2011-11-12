@@ -1,7 +1,7 @@
-//$primary: color-schemer(primary)
-//$secondary: color-schemer(secondary)
-//$tertiary: color-schemer(tertiary)
-//$quadrary: color-schemer(quadrary)
+$primary: color-schemer(primary)
+$secondary: color-schemer(secondary)
+$tertiary: color-schemer(tertiary)
+$quadrary: color-schemer(quadrary)
 
 $affirm: #4CDB18 !default
 $notify: #FFD900 !default
@@ -13,10 +13,12 @@ $body-color: $background-color !default
 $article-color: none !default
 $aside-color: $tertiary !default
 $header-color: $primary !default
-$nav-color: $secondary !default
+$nav-color: desaturate($secondary, 50) !default
 $footer-color: $primary !default
 $text-color: #333
 $link-color: $primary
+
+$nav-height: 30px !default
 
 // FONTS
 $text: serif
