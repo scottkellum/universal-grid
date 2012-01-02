@@ -7,7 +7,6 @@ $normalize-pixel: true !default
 $tab7-pixel-ratio: (6/5) !default
 
 @if $normalize-pixel
-@else
   // 7" 1024x600 tablet with no pixel scaling.
   @media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (orientation: portrait)
     html

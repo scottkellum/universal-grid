@@ -308,7 +308,7 @@ small {
   font-size: 0.6em;
   opacity: 0.5; }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 40em) {
   body {
     margin-top: 4.4em; }
 
@@ -320,3 +320,9 @@ small {
 
   nav {
     height: 4.4em; } }
+@media screen and (-webkit-device-pixel-ratio: 1) and (device-width: 1024px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1) and (device-width: 600px) and (orientation: portrait) {
+  html {
+    font-size: 19.2px; } }
+@media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait) {
+  html {
+    font-size: 12.8px; } }
