@@ -12,7 +12,6 @@ $reset: true !default
     padding: 0
     border: 0
     outline: 0
-    font-size: 100%
     vertical-align: baseline
     background: transparent
     cursor: default
@@ -110,7 +109,7 @@ $reset: true !default
     outline: none
   
   small
-    font-size: 85%
+    font-size: .75em
   
   strong, th
     font-weight: bold
@@ -123,7 +122,7 @@ $reset: true !default
   //  gist.github.com/413930
   
   sub, sup
-    font-size: 75%
+    font-size: .75em
     line-height: 0
     position: relative
   sup
@@ -171,17 +170,12 @@ $reset: true !default
     filter: expression(document.execCommand("BackgroundImageCache", false, true))
   
   
-  //  let's clear some floats
+  // clearfix
+  $clearfix-loaded: false !default
+  @if $clearfix-loaded
+    .clearfix
+      +clearfix
   
-  .clearfix:before, .clearfix:after
-    content: "\0020"
-    display: block
-    height: 0
-    overflow: hidden  
-  .clearfix:after
-    clear: both  
-  .clearfix
-    zoom: 1  
   
   ins
     background-color: #fcd700

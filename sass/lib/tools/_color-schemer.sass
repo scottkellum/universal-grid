@@ -20,8 +20,8 @@ $equalize: false !default
 @function equalize($color)
   @return hsl(hue($color), 100%, 50%)
 
-// Complement based on Claude Boutet's color wheel
-@function boutet-complement($color)
+// Complement based on a traditional color wheel (green is oposite red)
+@function traditional-complement($color)
   $hue: round(hue($color)/ 10) // find and round hue
   // Manually adjusted values until these can be mathmatically explained.
   @if $hue == 0
@@ -49,7 +49,7 @@ $equalize: false !default
   @if $hue == 11
     @return adjust-hue(invert($color), 60)
   @if $hue == 12
-    @return adjust-hue(invert($color), 60) // Green is halfway through the Boutet scale.
+    @return adjust-hue(invert($color), 60) // Green is halfway through the traditional scale.
   @if $hue == 13
     @return adjust-hue(invert($color), 55)
   @if $hue == 14
@@ -116,12 +116,12 @@ $equalize: false !default
     @if $color-scheme == mono
       @return lighten($base-color, $brightness-offset)
     @if $color-scheme == complement
-      @if $color-theory == boutet
-        @return boutet-complement($base-color)
+      @if $color-theory == traditional
+        @return traditional-complement($base-color)
       @return complement($base-color)
     @if $color-scheme == triad
-      @if $color-theory == boutet
-        @return adjust-hue(boutet-complement($base-color), $hue-offset)
+      @if $color-theory == traditional
+        @return adjust-hue(traditional-complement($base-color), $hue-offset)
       @return adjust-hue(complement($base-color), $hue-offset)
     @if $color-scheme == tetrad
       @return adjust-hue($base-color, $hue-offset)
@@ -137,12 +137,12 @@ $equalize: false !default
     @if $color-scheme == complement
       @return lighten($base-color, $brightness-offset)
     @if $color-scheme == triad
-      @if $color-theory == boutet
-        @return adjust-hue(boutet-complement($base-color), -$hue-offset)
+      @if $color-theory == traditional
+        @return adjust-hue(traditional-complement($base-color), -$hue-offset)
       @return adjust-hue(complement($base-color), -$hue-offset)
     @if $color-scheme == tetrad
-      @if $color-theory == boutet
-        @return boutet-complement($base-color)
+      @if $color-theory == traditional
+        @return traditional-complement($base-color)
       @return complement($base-color)
     @if $color-scheme == analogic
       @return adjust-hue($base-color, -$hue-offset)
@@ -158,23 +158,17 @@ $equalize: false !default
     @if $color-scheme == triad
       @return darken($base-color, $brightness-offset)
     @if $color-scheme == tetrad
-      @if $color-theory == boutet
-        @return adjust-hue(boutet-complement($base-color), $hue-offset)
+      @if $color-theory == traditional
+        @return adjust-hue(traditional-complement($base-color), $hue-offset)
       @return adjust-hue(complement($base-color), $hue-offset)
     @if $color-scheme == analogic
       @return darken($base-color, $brightness-offset)
     @if $color-scheme == accented-analogic
-      @if $color-theory == boutet
-        @return boutet-complement($base-color)
+      @if $color-theory == traditional
+        @return traditional-complement($base-color)
       @return complement($base-color)
     @warn "Oops! You didn’t properly define $color-scheme (complement, triad...)"
   @warn "Oops! You didn’t properly define $color-location (primary, secondary...)"
-
-// Write your basic color scheme
-$primary: color-schemer(primary) !default
-$secondary: color-schemer(secondary) !default
-$tertiary: color-schemer(tertiary) !default
-$quadrary: color-schemer(quadrary) !default
 
 // Tell other files that this is loaded.
 $color-schemer-loaded: true
