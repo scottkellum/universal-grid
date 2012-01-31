@@ -7,6 +7,12 @@ $grid-width: 90% !default
 $columns: 12 !default
 $wrapper-align: center !default
 $gutter: 2% !default
+$padding: 0 .5em !default
+
+$max-width: dp(1400)
+
+// DEFATULTS TO OOSASS WITH @EXTEND
+$oocss-grid: false !default
 
 
 // convert values to percentages
@@ -25,6 +31,7 @@ html
 
 .wrapper
   width: $grid-width
+  max-width: $max-width
   position: relative
   @if $wrapper-align == "center"
     margin-left: auto
@@ -32,3 +39,26 @@ html
   @if $wrapper-align == "right"
     margin-left: auto
     margin-right: 0
+
+
+// build grid classes
+$grid-placeholder: "%"
+@if $oocss-grid
+  $grid-placeholder: "."
+$width-prefix: "w-"
+$column-prefix: "c-"
+
+#{$grid-placeholder}next-col
+  margin-left: $calculated-gutter
+  float: left
+
+// grid widths
+@for $i from 1 through $columns
+  #{$grid-placeholder}#{$width-prefix+$i}
+    width:  grid($i)
+
+// column locations
+@for $i from 0 through $columns
+  #{$grid-placeholder}#{$column-prefix+$i}
+    position: absolute
+    left:  grid($i) + $calculated-gutter

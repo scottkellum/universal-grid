@@ -171,9 +171,20 @@ html {
 
 .wrapper {
   width: 90%;
+  max-width: 87.5em;
   position: relative;
   margin-left: auto;
   margin-right: auto; }
+
+aside {
+  margin-left: 2%;
+  float: left; }
+
+aside {
+  width: 23.5%; }
+
+article {
+  width: 74.5%; }
 
 html {
   background-color: white;
@@ -185,12 +196,7 @@ body {
 article {
   background-color: white;
   float: left;
-  width: 74.5%;
   margin-bottom: 2em; }
-
-aside {
-  float: right;
-  width: 23.5%; }
 
 footer {
   background-color: #e3870e;
@@ -317,6 +323,7 @@ small {
     width: 100%; }
 
   aside {
+    margin-left: 0;
     width: 100%; }
 
   nav {

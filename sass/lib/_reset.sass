@@ -172,6 +172,9 @@ $reset: true !default
   
   // clearfix
   $clearfix-loaded: false !default
+  @if $clearfix-loaded == false
+    %clearfix
+      +clearfix
   @if $clearfix-loaded
     .clearfix
       +clearfix
