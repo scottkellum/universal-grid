@@ -1,3 +1,21 @@
+.r {
+  background: #ff9999 !important; }
+
+.g {
+  background: #99ff99 !important; }
+
+.b {
+  background: #9999ff !important; }
+
+.c {
+  background: #99ffff !important; }
+
+.m {
+  background: #ff99ff !important; }
+
+.y {
+  background: #ffff99 !important; }
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -170,9 +188,10 @@ html {
   line-height: 1.3em; }
 
 .wrapper {
+  width: 90%;
   position: relative;
-  margin-left: 5%;
-  margin-right: 5%; }
+  margin-left: auto;
+  margin-right: auto; }
 
 html {
   background-color: white;
