@@ -54,14 +54,14 @@ $column-prefix: "c-" !default
   margin-left: $calculated-gutter
   float: left
 
-// grid widths
+// Grid widths
 @for $i from 1 through $columns
   // Writes classes or placeholders depending on the $object-type variable.
   // You may also like a more semantic prefix, like "width-". You can chage it by changing the $width-prefix variable.
   #{$object-type}#{$width-prefix+$i}
     width:  grid($i)
 
-// column locations in absolute positions. Use next-col in a series.
+// Column locations in absolute positions. Use next-col in a series.
 @for $i from 0 through $columns
   // Writes classes or placeholders depending on the $object-type variable.
   // You may also like a more semantic prefix, like "column-". You can chage it by changing the $column-prefix variable.
@@ -69,6 +69,7 @@ $column-prefix: "c-" !default
     position: absolute
     left:  grid($i) + $calculated-gutter
 
+// Add padding to items on the grid.
 #{$object-type}padded
   padding: $padding
   // box sizing to make sure padding doesn't effect grid.
