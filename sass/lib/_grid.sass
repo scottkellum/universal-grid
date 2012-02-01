@@ -7,7 +7,7 @@ $grid-width: 90% !default
 $columns: 12 !default
 $wrapper-align: center !default
 $gutter: 2% !default
-$padding: 0 .5em !default
+$padding: 0 1em !default
 
 $max-width: dp(1400)
 
@@ -41,24 +41,38 @@ html
     margin-right: 0
 
 
-// build grid classes
-$grid-placeholder: "%"
+// BUILD GRID OBJECTS
+$object-type: "%" !default
 @if $oocss-grid
-  $grid-placeholder: "."
-$width-prefix: "w-"
-$column-prefix: "c-"
+  $grid-placeholder: "." !default
+$width-prefix: "w-" !default
+$column-prefix: "c-" !default
 
-#{$grid-placeholder}next-col
+
+// For the next column in a series. It floats and spaces to sit on the grid next to the one before it.
+#{$object-type}next-col
   margin-left: $calculated-gutter
   float: left
 
 // grid widths
 @for $i from 1 through $columns
-  #{$grid-placeholder}#{$width-prefix+$i}
+  // Writes classes or placeholders depending on the $object-type variable.
+  // You may also like a more semantic prefix, like "width-". You can chage it by changing the $width-prefix variable.
+  #{$object-type}#{$width-prefix+$i}
     width:  grid($i)
 
-// column locations
+// column locations in absolute positions. Use next-col in a series.
 @for $i from 0 through $columns
-  #{$grid-placeholder}#{$column-prefix+$i}
+  // Writes classes or placeholders depending on the $object-type variable.
+  // You may also like a more semantic prefix, like "column-". You can chage it by changing the $column-prefix variable.
+  #{$object-type}#{$column-prefix+$i}
     position: absolute
     left:  grid($i) + $calculated-gutter
+
+#{$object-type}padded
+  padding: $padding
+  // box sizing to make sure padding doesn't effect grid.
+  +prefix(box-sizing, border-box, -webkit- -moz-)
+  .html.no-box-sizing &
+    // Remove padding if box-sizing isn't supported via modernizer
+    padding: 0
