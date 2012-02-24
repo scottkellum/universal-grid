@@ -186,6 +186,94 @@ aside {
 article {
   width: 74.5%; }
 
+aside ul {
+  margin: 0;
+  padding: 0; }
+aside li {
+  list-style: none;
+  margin-bottom: 1px; }
+  aside li a, aside li a:hover, aside li li {
+    display: block;
+    border: none;
+    background-color: #688cbc; }
+  aside li a {
+    padding: 0.15em 0.75em;
+    color: white; }
+    aside li a:hover {
+      color: white;
+      background-color: #4a72a7; }
+
+a {
+  color: #834e08;
+  border-bottom: 1px dotted #834e08; }
+  a:hover {
+    color: #e3870e;
+    border-bottom: 1px solid #e3870e; }
+
+table {
+  width: 100%;
+  margin-bottom: 1.3em; }
+
+td {
+  border: 1px solid #777777;
+  padding: 0.2em 0.5em; }
+
+tr:nth-child(even) {
+  background-color: #f6f6f6; }
+
+tr:hover {
+  background-color: #dddddd; }
+
+p {
+  text-indent: 1.5em;
+  font-family: serif; }
+
+.no-indent {
+  text-indent: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  line-height: 1.3em; }
+
+article h1 {
+  font-size: 3em;
+  margin-top: 0; }
+article h2, article h3, article h4 {
+  border-top: 1px solid #f29f32;
+  margin-top: 1em; }
+article h2 {
+  font-size: 2em;
+  border-top-width: 3px; }
+article h3 {
+  font-size: 1.6em; }
+article h4 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+article h5 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+article h6 {
+  font-size: 1em; }
+
+ul, ol {
+  padding-left: 1.3em; }
+
+pre, code {
+  font-family: monospace; }
+
+section {
+  border-top: 1px solid #f29f32;
+  border-bottom: 1px solid #f29f32;
+  margin: 0.65em 0;
+  padding: 0.65em 1.5em; }
+
+small {
+  font-size: 0.75em;
+  opacity: 0.75;
+  font-weight: bold; }
+
 html {
   background-color: white;
   color: #333333; }
@@ -207,6 +295,9 @@ footer {
   footer li {
     display: inline;
     list-style: none; }
+  footer a, footer a:hover {
+    color: white;
+    border: none; }
 
 .header.container {
   background-color: #e3870e; }
@@ -233,6 +324,9 @@ header {
     margin-top: -16px;
     font-size: 1.5em;
     color: #f8e1c2; }
+  header a, header a:hover {
+    color: inherit;
+    border: none; }
 
 nav {
   background-color: #4a72a7;
@@ -266,54 +360,13 @@ nav {
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border-bottom: none; }
     nav a:hover {
       border-top: 0.3em solid #f29f32;
+      border-bottom: none;
+      color: white;
       height: 1.9em; }
-
-p {
-  text-indent: 1em;
-  font-family: serif; }
-
-.no-indent {
-  text-indent: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  line-height: 1.3em; }
-
-article h2, article h3, article h4 {
-  border-top: 1px solid #f29f32;
-  margin-top: 1em; }
-article h1 {
-  font-size: 3em;
-  margin-top: 0; }
-article h2 {
-  font-size: 2em;
-  border-top-width: 3px; }
-article h3 {
-  font-size: 1.6em; }
-article h4 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
-article h5 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
-
-ul, ol {
-  padding-left: 1.3em; }
-
-section {
-  border-top: 1px solid #f29f32;
-  border-bottom: 1px solid #f29f32;
-  margin: 0.65em 0;
-  padding: 0.65em 0; }
-
-small {
-  font-size: 0.6em;
-  opacity: 0.5; }
 
 @media all and (max-width: 40em) {
   body {
@@ -334,3 +387,9 @@ small {
 @media screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 683px) and (orientation: landscape), screen and (-webkit-device-pixel-ratio: 1.5) and (device-width: 400px) and (orientation: portrait) {
   html {
     font-size: 12.8px; } }
+* {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }

@@ -1,42 +1,15 @@
-$primary: color-schemer(primary)
-$secondary: color-schemer(secondary)
-$tertiary: color-schemer(tertiary)
-$quadrary: color-schemer(quadrary)
+$nav-height: 2.2em
 
-$affirm: #4CDB18 !default
-$notify: #FFD900 !default
-$warn: #00C2ED !default
-$error: #ED3300 !default
-
-$body-color: #fff !default
-$article-color: #fff !default
-$aside-color: $tertiary !default
-$header-color: $primary !default
-$nav-color: desaturate($secondary, 50) !default
-$footer-color: $primary !default
-$text-color: #333
-$link-color: $primary
-
-$nav-height: 2.2em !default
-
-// FONTS
-$text: serif
-$hed: sans-serif
-$subhed: $hed
++styleguide-links($primary)
++styleguide-table(#777)
++typography
 
 @import default/foundation
 @import default/article
 @import default/aside
-@import default/breadcrumbs
-@import default/buttons
 @import default/footer
-@import default/forms
 @import default/header
-@import default/links
 @import default/nav
-@import default/pagination
-@import default/tables
-@import default/typography
 
 @import default/media
 @import default/print

@@ -1,10 +1,16 @@
+// FRAMEWORK
+@import lib/tools
+@import lib/reset
+@import lib/grid
+
 // VARIABLES
 
 $base-size: 16px
 //$line-height: 1.3em
 
 $base-color: #E3870E
-$color-scheme: complement
+$color-scheme: complement  //  mono, complement, triad, tetrad, analogic, accented-analogic
+
 
 $grid-width: 90%
 //$columns: 12
@@ -15,13 +21,12 @@ $grid-width: 90%
 // WRITE DEBUG CLASSES
 $debug: false
 
-// FRAMEWORK
-@import lib/tools
-@import lib/reset
-@import lib/grid
+// STYLEGUIDE
+@import lib/styleguide
 
 // SKIN
 @import skin/default
 
 // PLUGNINS
-@import plugin/normalize-pixel
+@import lib/plugin/normalize-pixel
+@import lib/plugin/transition-all
